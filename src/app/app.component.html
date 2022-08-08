@@ -1,21 +1,25 @@
 <div class="calculadora row p-3 pt-4">
-  <input type="text"  disabled = true>
-  <div class ="botones"> 
-    <button class="btn boton">7</button>
-    <button class="btn boton">8</button>
-    <button class="btn boton">9</button>
-    <button class="btn boton">/</button>
-    <button class="btn boton">4</button>
-    <button class="btn boton">5</button>
-    <button class="btn boton">6</button>
-    <button class="btn boton">X</button>
-    <button class="btn boton">1</button>
-    <button class="btn boton">2</button>
-    <button class="btn boton">3</button>
-    <button class="btn boton">-</button>
-    <button class="btn boton">,</button>
-    <button class="btn boton">0</button>
-    <button class="btn boton">=</button>
-    <button class="btn boton">+</button>
+  <input type="text"  disabled = false [ngModel]="pantalla" >
+  <div id ="botones" class ="botones" (click)="keydown($event)"> 
+    <button id = "C" class="btn boton">C</button>
+    <button id = "(" class="btn boton">(</button>
+    <button id = ")" class="btn boton">)</button>
+    <button id = "←" class="btn boton">←</button>
+    <button id = "7" class="btn boton">7</button>
+    <button id = "8" class="btn boton">8</button>
+    <button id = "9" class="btn boton">9</button>
+    <button id = "/" class="btn boton">/</button>
+    <button id = "4" class="btn boton">4</button>
+    <button id = "5" class="btn boton">5</button>
+    <button id = "6" class="btn boton">6</button>
+    <button id = "*" class="btn boton">*</button>
+    <button id = "1" class="btn boton">1</button>
+    <button id = "2" class="btn boton">2</button>
+    <button id = "3" class="btn boton">3</button>
+    <button id = "-" class="btn boton">-</button>
+    <button id = "." class="btn boton">.</button>
+    <button id = "0" class="btn boton">0</button>
+    <button id = "=" class="btn boton">=</button>
+    <button id = "+" class="btn boton">+</button>
   </div>
 </div>
